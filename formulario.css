@@ -1,0 +1,93 @@
+
+html{
+    animation: colores 5s linear infinite;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+p{
+    text-align: center;
+}
+
+body{
+    border-radius: 30px;
+    background-color: aliceblue;
+    padding: 30px;
+    min-width: 30vh;
+    width: 50vh;
+    max-width: 70vh;
+}
+
+header{
+    text-align: center;
+}
+
+.principal{
+    width: 100%;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+    display: grid;
+    place-content: center;
+    place-items: center;    
+}
+
+
+.seleccion{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+}
+
+input{
+    border-radius: 30px;
+}
+
+.dudas textarea{
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+button {
+  width: 30%;
+  height: 50px;
+  animation: colores 2s infinite;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.botones{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+@keyframes colores {
+    0%{
+        background-color: aqua;
+    }
+    25%{
+        background-color: rgb(0, 165, 165);
+    }
+    50%{
+        background-color: rgb(0, 100, 100);
+    }
+    75%{
+        background-color: rgb(0, 67, 67);
+    }
+    100%{
+        background-color: rgb(0, 255, 255);
+    }
+
+}

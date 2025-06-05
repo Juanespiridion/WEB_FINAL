@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.snow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image: radial-gradient(circle, #ffffff 0%, #000000 50%);
+    /* background-repeat: repeat; */
+    /* filter: blur(1.5px); */
+    background-size: 350px 300px;
+    animation: snow4 6s linear infinite;
+    z-index: -1;
+    opacity: 0.92;
+}
+@keyframes snow4 { 
+    0%{background-position: 0px 0px;}
+    100%{background-position: 0px 1200px;}
+}
+
+.container-tarjet{
+    background-color: #0e0e0e;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3, green, blue, alpha);
+    z-index: 1;
+    text-align: center;
+    width: max-content;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 200vh;
+    height: 85vh;
+}
+
+
+a{
+    text-decoration: none;
+    color: #00F5D0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header{
+    background: radial-gradient(rgb(56, 55, 55), black);
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.header a{
+    margin: 10px;
+}
+
+.menu{
+    flex: 1;
+    display: flex;
+}
+h1{
+    color: #00F5D0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-size: 40px;
+}
+
+
+.rusell{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+}
+.rusell-img{
+    flex: 1;
+    background-image: url("https://hips.hearstapps.com/hmg-prod/images/gettyimages-2204242507-67ea76cdf3dbe.jpg");
+    background-size: cover;
+    box-shadow: 2px 2px 5px rgb(209, 31, 31);
+}
+.amg-img{
+    flex: 1;
+    background-image: url("https://di-uploads-pod14.dealerinspire.com/downtownlamotorsmercedesbenz/uploads/2024/04/Mercedes-AMG-F1-Petronas-Side-View.jpg");
+    background-size: cover;
+    /* background-position: center; */
+    padding: 20px 0;
+    
+    animation: mov 5s linear infinite;
+    animation-delay: 0.1s;
+}
+
+.kimi{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px 0px;
+}
+.kimi-img{
+    flex: 1;
+    background-image: url("https://hips.hearstapps.com/hmg-prod/images/gettyimages-2204835307-67ea76dc095bd.jpg?crop=1.00xw:0.880xh;0,0.0489xh&resize=640:*");
+    background-size: cover;
+    box-shadow: 2px 2px 5px rgb(209, 31, 31);
+}
+
+
+.amg-img:hover{
+    transform: scale(1.02);
+    transition: transform 0.2s;
+    background-size: 350%;
+
+    background-position: center;
+    box-shadow: 2px 2px 5px #00F5D0;
+    background-repeat: no-repeat;
+}
+
+@keyframes mov {
+    0%{
+        background-position: 0px 0px;
+    }
+    50%{
+        background-position: 100% 0px;
+    }
+    100%{
+        background-position: 0px 0px;
+    }
+    
+
+
+}

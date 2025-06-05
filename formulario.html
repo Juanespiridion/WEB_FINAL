@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Formulario</title>
+</head>
+<body>
+
+    
+    <header>
+        <h1>Formulario de Muestra</h1>
+        <h3>Ingrese los datos solicitados</h3>
+    </header>
+
+    <main>
+        <form action="" class="campos">
+
+            <section class="principal">
+                <div class="item">
+                    <label id="input" for="nombre">Nombre Completo</label>
+                    <br>
+                    <input id="input" type="text" placeholder="Ingresa tu nombre completo" required>
+                </div>
+
+                <div class="item">
+                    <label id="input" for="carrera">Carrera</label>
+                    <br>
+                    <input id="input" type="text" placeholder="Ingresa tu carrera">
+                </div>
+
+                <div class="item">
+                    <label id="input" for="celuar">Numero de Celular</label>
+                    <br>
+                    <input id="input" type="tel" placeholder="Ejemplo: 5576548903" required>
+                </div>
+
+                <div class="item">
+                    <label for="email">Correo Electronico</label>
+                    <br>
+                    <input id="input" type="email" placeholder="ejemplo@estudiante.uacm.edu.mx" required>
+                </div>
+            </section>
+            
+            
+            <p>Que equipo de fórmula 1 es tu favorito</p>
+            <div class="seleccion">
+                <div class="item">
+                    <input id="input" type="radio">
+                    <label for="mclaren">McLaren</label>
+                </div>
+                <div class="item">
+                    <input id="input" type="radio">
+                    <label for="redbull">RedBull</label>
+                </div>
+                <div class="item">
+                    <input id="input" type="radio">
+                    <label for="mercedes">Mercedes Benz</label>
+                </div>
+                <div class="item">
+                    <input id="input" type="radio">
+                    <label for="ferrari">Ferrari</label>
+                </div>
+                
+
+                
+                
+                
+            </div>
+
+            <div class="dudas">
+                <p>Dudas o comentarios</p>
+                <textarea id="input" name="dudas" id=""></textarea>
+                
+            </div>
+
+
+            <div  class="botones">
+                <button onclick="borrarInput()">BORRAR</button>
+                <button>ENVIAR</button>
+            </div>
+        </form>
+        <script>
+        function borrarInput() {
+            document.getElementById("input").value = "";
+        }
+        </script>
+    </main>
+</body>
+</html>

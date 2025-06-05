@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#progress-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 0%;
+    background-color: rgb(255, 255, 0);
+    z-index: 9999;
+    transition: width 0.2s ease;
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color: #00162B;
+    color: white;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color: chocolate;
+    padding: 20px;
+
+    display: flex;
+    justify-content: end;
+    border-radius: 0px 0px 20px 20px;
+}
+header > a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.principal{
+    background-image: url("https://media.formula1.com/image/upload/f_auto/q_auto/v1696849144/fom-website/2023/Qatar/verstappen-champion-qatar-2023-2.png.transform/9col/image.png");
+    /* background-size: cover; */
+    background-repeat: round;
+      mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    color: aliceblue;
+}
+
+.info{
+    max-width: 1100px;
+}
+
+h1{text-align: center;}
+
+.info h1{
+    background: linear-gradient(90deg, #FFFF00, #00FFFF );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 80px;
+      text-shadow: 2px 2px 10px #FFFF00 ;
+}
+.info h2{
+    font-size: 40px;
+    color: yellowgreen;
+      text-shadow: 2px 2px 10px #FFFF00 ;
+      text-align: center;
+}
+
+
+.principal{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.principal>img{
+    box-shadow: 2px 2px 4px rgb(255, 255, 255);
+    animation: animacion-img 0.7s infinite;
+}
+
+@keyframes animacion-img {
+  0%   { transform: translateY(0); }
+  25%  { transform: translateY(-3px); }
+  50%  { transform: translateY(3px); }
+  75%  { transform: translateY(-3px); }
+  100% { transform: translateY(0); }
+}
+
+
+
+.resumen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.resumen h2{
+    max-width: 30%;
+}
+
+.alineacion{
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    gap: 20px;
+    margin: 80px 20px;
+}
+
+.pilotos{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.verstappen, .tsunoda, .perez, .liam{
+    flex: 1;
+    background-size: cover;
+    background-position: top;
+    writing-mode: vertical-rl;
+    padding-right: 4px;
+}
+
+.verstappen{
+    background-image: url("https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2025Drivers/verstappen");
+    
+}
+.tsunoda{
+    background-image: url("https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2025Drivers/tsunoda");
+}
+.perez{
+    background-image: url("https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiJmMW1hbmFnZXIvMjAyMi9kcml2ZXJzL2hlYWRzaG90cy9mMS9wZXIucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo1MDB9fX0=");
+}
+.liam{
+    background-image: url("https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiJmMW1hbmFnZXIvMjAyMi9kcml2ZXJzL2hlYWRzaG90cy9mMS9sYXcucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo1MDB9fX0=");
+}
+
+footer{
+    color: #00162B;
+    padding: 20px;
+    background-color: rgb(255, 255, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #00162B;
+    padding: 5px;
+}

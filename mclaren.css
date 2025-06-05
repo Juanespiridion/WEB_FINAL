@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+header{
+    background-color: lightslategray;
+    padding: 20px 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+header > a{
+    margin: 0 30px;
+}
+
+header > a:hover{
+    animation-name: animacion;
+    animation-duration: 1s;
+}
+
+@keyframes animacion {
+    from{
+        color: #fc8905;
+    }
+}
+
+main{
+    height: 100vh;
+}
+
+
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FC9905;
+    padding: 20px 0;
+    height: 30%;
+    text-align: center;
+    gap: 18px;
+}
+
+.presentacion h1, .presentacion h2{
+    max-width: 30%;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(246, 235, 235);
+}
+.presentacion 
+
+button{
+    border-radius: 15px;
+    padding: 7px;
+    border: none;
+    background-color: rgb(244, 225, 184);
+    box-shadow: 3px 3px #f86300;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.container-galery{
+    display: grid;
+    place-content: center;
+    background-color: lightgray;
+    padding: 30px;
+    height: 30%;
+}
+
+
+
+.galeria > img{
+    width: 300px;
+    height: 200px;
+}
+
+.galeria{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.video{
+    display: grid;
+    place-content: center;
+    background-color: #f3f1ef;
+    height: 40%;
+}
+
+footer{
+    background-color: #fc8905;
+    padding: 10px 0;
+}
+footer > a{
+    color: red;
+}

@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'FerrariSans';
+    src: url("https://www.ferrari.com/formula1/static/assets/fonts/Ferrari-SansMedium.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000000;
+    color: white;
+    
+    font-family: 'FerrariSans', sans-serif;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+header{
+    background-color: #830128;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left a{
+    margin: 0 15px;
+}
+
+.fondo{
+    background-image: url("https://cdn.wallpapersafari.com/52/49/dXicpo.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.leyenda{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.leyenda h1, .leyenda h2{
+    width: 40%;
+    text-align: center;
+}
+
+.alineacion{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    display: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    min-width: 50%;
+    background: linear-gradient( black 0%,rgb(25, 25, 25) 25%,rgb(50, 50, 50) 50%, rgb(100, 100, 100) 75%, rgb(150, 150, 150) 100%);
+}
+.alineacion h1{
+    font-size: 40px;
+    /* margin-bottom: 30px; */
+}
+
+.pilotos{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    aspect-ratio: 1/2;
+}
+
+
+.leclerc{
+    flex: 1;
+}
+.leclerc-img{
+    background-image: url("https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2025Drivers/leclerc");
+
+}
+
+.leclerc-img, .ham-img{
+    background-size: cover;
+    background-position: center;
+}
+.leclerc, .ham{
+    display: grid;
+}
+.leclerc h2, .ham h2{
+    padding: 20px;
+    text-align: center;
+}
+
+.ham{
+    flex: 1;
+}
+.ham-img{
+    background-image: url("https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2025Drivers/hamilton");
+}
+.leyenda, .string{
+    view-timeline-name: --reveal;
+
+    animation-name: show;
+    animation-fill-mode: both;
+
+    animation-timeline: --reveal;
+    animation-range: entry 10% cover 100%;
+}
+.ham, .leclerc{
+    view-timeline-name: --reveal;
+
+    animation-name: show;
+    animation-fill-mode: both;
+
+    animation-timeline: --reveal;
+    animation-range: entry 0.1% cover 50%;
+}
+
+
+@keyframes show{
+  from{
+    opacity: 0; scale: 10%;
+  }
+  to{
+    opacity: 1; scale: 100%;
+  }
+}
+
+.footer{
+    background-color: #830128;
+    padding: 30px;
+    text-align: center;
+}
+
